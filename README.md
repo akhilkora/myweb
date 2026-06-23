@@ -45,5 +45,8 @@ Because all links are **relative**, the site works whether it's served at the do
 
 ## Update the profile
 
-`index.html` is exported from the design source `Profile.dc.html`. Re-export it if you
-change the profile, then drop the new `index.html` in here.
+`index.html` is the self-contained, exported homepage (it has no external dependencies and
+needs no build step — that's why it works on GitHub Pages). The blog and about pages are
+plain static HTML that link back to `index.html`. There is intentionally **no `.dc.html`
+source file in this folder** — that file is the editable design source and renders as raw
+`{{ }}` placeholders if served directly, so it must not be deployed.
