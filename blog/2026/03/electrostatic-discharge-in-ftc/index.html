@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electrostatic Discharge in FTC · Akhil Kora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../../assets/css/style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="../../../../Profile.dc.html"><span class="brand-mark">A</span><span class="brand-text"><span class="brand-name">Akhil Kora</span><span class="brand-sub">SOPHOMORE · MAKER</span></span></a>
+      <nav class="nav-links"><a href="../../../../Profile.dc.html">Profile</a><a href="../../../index.html" class="active">Blog</a><a href="../../../../about/index.html">About</a></nav>
+    </div>
+  </header>
+  <main class="site-main">
+    <article class="post">
+      <a class="back-link" href="../../../index.html">← Build Log</a>
+      <div class="post-meta-top"><span class="tag tag-electrical">Electrical</span><span class="post-date">Mar 8, 2026</span><span class="dot">·</span><span>5 min read</span></div>
+      <h1 class="post-title">Electrostatic Discharge in FTC</h1>
+      <p class="post-lede">What ESD is, why foam-tile robots build it up, the damage it does, and how we keep it from frying our electronics.</p>
+      <div class="prose">
+        <h2>What is electrostatic discharge?</h2>
+        <p>In FIRST Tech Challenge (FTC), <strong>electrostatic discharge (ESD)</strong> is the sudden transfer of static electricity from one object to another — and it often damages robot components.</p>
+        <h2>What causes it?</h2>
+        <p>The main cause is <strong>triboelectric charging</strong>: as the robot's wheels move around on the foam tiles, they build up static electricity. Once that charge has built up in the robot, it can release through contact with other objects on the field. When a conductive object — like the robot's frame — touches or comes close to something at a different charge, such as grounded components or the field itself, a sudden discharge occurs.</p>
+        <h2>What are the effects?</h2>
+        <p>ESD has many effects on a robot: it can cause the robot to lose control, trigger sensor or motor glitches, or permanently damage electronic components.</p>
+        <ul>
+          <li>The robot may stop responding to the controller, ending up in a lost or frozen state.</li>
+          <li>ESD can trigger incorrect motor movements, as if the controller had sent the wrong command.</li>
+          <li>Hardware or software may temporarily malfunction, requiring a hard reset.</li>
+          <li>It can permanently damage delicate parts like microprocessors, servo controllers, and other integrated circuits.</li>
+        </ul>
+        <h2>How to mitigate it?</h2>
+        <p>Just as there are many effects, there are many ways to prevent ESD in the first place:</p>
+        <ul>
+          <li>Use <strong>anti-static spray</strong> on the competition field tiles or the robot's wheels to reduce static buildup.</li>
+          <li><strong>Electrically isolate</strong> the robot's electronics from the metal frame so static can't transfer across it.</li>
+          <li>Protect all sensitive parts — especially control and expansion hubs — from field components and other robots.</li>
+          <li>Use <strong>copper tape or grounding straps</strong> to control the flow of static electricity through the robot.</li>
+          <li>Make sure every team member is educated on the risks of ESD when handling or working on the robot.</li>
+        </ul>
+        <h2>Conclusion</h2>
+        <blockquote>ESD is a serious issue in FTC that can lead to unpredictable robot behavior and component damage — but its effects can be minimized through proper prevention.</blockquote>
+        <p>By understanding the causes and applying the right mitigation strategies, teams can greatly improve the reliability and safety of their robots during competition.</p>
+      </div>
+      <a class="back-link bottom" href="../../../index.html">← Back to all posts</a>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span>© 2026 Akhil Kora · Built for makers</span><a href="../../../index.html">All posts</a></div></footer>
+</body>
+</html>

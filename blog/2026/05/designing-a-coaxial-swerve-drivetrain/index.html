@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Designing a Coaxial Swerve Drivetrain · Akhil Kora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../../assets/css/style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="../../../../Profile.dc.html"><span class="brand-mark">A</span><span class="brand-text"><span class="brand-name">Akhil Kora</span><span class="brand-sub">SOPHOMORE · MAKER</span></span></a>
+      <nav class="nav-links"><a href="../../../../Profile.dc.html">Profile</a><a href="../../../index.html" class="active">Blog</a><a href="../../../../about/index.html">About</a></nav>
+    </div>
+  </header>
+  <main class="site-main">
+    <article class="post">
+      <a class="back-link" href="../../../index.html">← Build Log</a>
+      <div class="post-meta-top"><span class="tag tag-cad">CAD</span><span class="post-date">May 12, 2026</span><span class="dot">·</span><span>6 min read</span></div>
+      <h1 class="post-title">Designing a Coaxial Swerve Drivetrain</h1>
+      <p class="post-lede">A close look at the coaxial swerve pod I designed for FTC Team #24108 Boltic — belt-driven steering, bevel-gear drive, and a compact two-plate frame.</p>
+      <div class="prose">
+        <p>Each pod of the drivetrain is a steerable drive module that lets a single wheel rotate in any direction while driving, achieving <strong>holonomic motion</strong>. The assembly packages the hardware between two plates to stay compact and rigid, with steering handled by a belt-driven pulley system and drive routed through bevel gears and pulleys down to the wheel.</p>
+        <h2>Frame &amp; structure</h2>
+        <p>The pod is built on a sandwiched <strong>two-plate aluminum frame</strong> joined by standoffs. Stacking the plates on standoffs sets a gap for the steering and drive components, and gives the module stiffness without adding a heavy enclosure around it. All mounting uses the <strong>goBILDA hex hole/bore pattern</strong>, which keeps the plate layout, pulley mounting, and motor placement on a consistent grid.</p>
+        <h2>Steering</h2>
+        <p>The steering runs on an <strong>81-tooth custom-designed pulley</strong> that forms the rotation ring. A SWYFT motor drives this ring through a 5&nbsp;mm HTD timing belt. The HTD belt was chosen over a geared ring for lower friction, quieter steering, and simpler tensioning — keeping the belt under tension is what limits backlash.</p>
+        <h2>Drive</h2>
+        <p>Drive power comes from a separate drive motor and is transmitted down through a pulley system and bevel-gear set to the wheel. Routing the drive along the rotation axis keeps the drive path separate from steering, so rotating the module does not disturb wheel speed.</p>
+        <h2>Key specifications</h2>
+        <table>
+          <tr><th>Component</th><th>Spec</th></tr>
+          <tr><td>Steering actuator</td><td>SWYFT servo</td></tr>
+          <tr><td>Steering ring</td><td>81-tooth custom-designed pulley</td></tr>
+          <tr><td>Steering reduction</td><td>2.7:1</td></tr>
+          <tr><td>Drive motor</td><td>goBILDA bare motor with built-in hex shaft</td></tr>
+          <tr><td>Drive transmission</td><td>Pulleys and bevel-gear set</td></tr>
+          <tr><td>Drive reduction</td><td>10.8:1 → 555 RPM</td></tr>
+          <tr><td>Wheel</td><td>72 mm, metal cast</td></tr>
+          <tr><td>Tread</td><td>AndyMark Blue Nitrile</td></tr>
+          <tr><td>Frame</td><td>Two-plate aluminum on standoffs</td></tr>
+          <tr><td>Primary hardware</td><td>goBILDA structural &amp; motion components</td></tr>
+          <tr><td>Pods on robot</td><td>4</td></tr>
+        </table>
+      </div>
+      <a class="back-link bottom" href="../../../index.html">← Back to all posts</a>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span>© 2026 Akhil Kora · Built for makers</span><a href="../../../index.html">All posts</a></div></footer>
+</body>
+</html>

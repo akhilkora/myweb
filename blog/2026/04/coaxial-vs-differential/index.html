@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coaxial vs. Differential Swerve · Akhil Kora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../../assets/css/style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="../../../../Profile.dc.html"><span class="brand-mark">A</span><span class="brand-text"><span class="brand-name">Akhil Kora</span><span class="brand-sub">SOPHOMORE · MAKER</span></span></a>
+      <nav class="nav-links"><a href="../../../../Profile.dc.html">Profile</a><a href="../../../index.html" class="active">Blog</a><a href="../../../../about/index.html">About</a></nav>
+    </div>
+  </header>
+  <main class="site-main">
+    <article class="post">
+      <a class="back-link" href="../../../index.html">← Build Log</a>
+      <div class="post-meta-top"><span class="tag tag-cad">CAD</span><span class="post-date">Apr 2, 2026</span><span class="dot">·</span><span>5 min read</span></div>
+      <h1 class="post-title">Coaxial vs. Differential Swerve</h1>
+      <p class="post-lede">Two ways to build a swerve drivetrain — and why, for our FTC constraints, the coaxial module won out.</p>
+      <div class="prose">
+        <h2>What is a swerve drivetrain?</h2>
+        <p>A swerve drivetrain is an advanced system where each individual wheel can independently drive <strong>and</strong> rotate a full 360°. This lets the robot move holonomically — forwards, backwards, diagonally, or sideways — and rotate in place at the same time. A standard swerve consists of four independent modules placed at the corners of the drivetrain. Unlike the more common mecanum drivetrains, swerve usually uses treaded traction wheels (or custom wheels), giving the robot full pushing power without the risk of being easily pushed around by opponents.</p>
+        <h2>What are the different types?</h2>
+        <p>There are two types of swerve drivetrain, distinguished by their module architecture. The first is the <strong>coaxial swerve</strong> — standard for competitive robotics like FIRST Tech Challenge (FTC). The wheels are driven by a motor, while steering is done by a servo, due to the motor constraints in FTC. The second is the <strong>differential swerve</strong>, which is much more complex and powerful: both the steering and the wheel are driven by motors, working together through a gearbox.</p>
+        <h2>Pros and cons of the differential swerve</h2>
+        <p>The differential swerve has a very complex design, as it requires both motors per module to contribute to driving the wheel and steering it. In exchange it can be <strong>extremely compact</strong>, reducing the overall size of the robot while maintaining power at the wheels. Differential swerves are usually used in FRC, because running four separate modules takes <strong>8 motors</strong>.</p>
+        <p>Some FTC teams build a differential swerve using only <strong>2 modules</strong> in opposite corners, placing odometry dead wheels in the other corners for localization. This keeps the robot compact — but it reduces the overall push the robot can provide, which works against the whole purpose of the differential swerve.</p>
+        <h2>Pros and cons of the coaxial swerve</h2>
+        <p>The coaxial swerve, on the other hand, has a much simpler design, using only <strong>one motor and one servo per module</strong>. That frees up the other four motors for other subsystems on the robot. It still pushes harder than a mecanum drivetrain thanks to traction wheels, even without two motors per module. The catch: to keep it compact you'd use goBILDA bare motors, which need to be geared down to at least 500 RPM from 6,000 — and that increases the overall size of the drivetrain and robot.</p>
+        <h2>Which one is better?</h2>
+        <blockquote>For our learning goals and FTC requirements, I'd choose the coaxial swerve drivetrain.</blockquote>
+        <p>It will increase the overall size of the robot, but if we design it into a <strong>parallel-plate drivetrain</strong>, that wouldn't make much of a difference as long as it still fits in the pod.</p>
+      </div>
+      <a class="back-link bottom" href="../../../index.html">← Back to all posts</a>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span>© 2026 Akhil Kora · Built for makers</span><a href="../../../index.html">All posts</a></div></footer>
+</body>
+</html>
